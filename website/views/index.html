@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <script src="//js.leapmotion.com/leap-0.6.4.js"></script>
+  <script src="//js.leapmotion.com/leap-plugins-0.1.11.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/sparkjs/1/spark.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+  crossorigin="anonymous">
+
+</head>
+<center>
+  <div class="col-md-3"></div>
+  <div class="panel panel-default col-md-6" style="margin-top:100px;">
+    <div class="panel-heading">
+      <h1 class="panel-title">The Force Tester!</h1>
+    </div>
+    <div class="panel-body">
+      <div id=message>Please wait for initialization</div>
+      <div id=output></div><hr/>
+      You can let your true "force" color show<br/><b>OR</b><br/>you can choose your own destiny<br/><br/>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><img src="images/green.jpg" alt="green" class="img-circle" style="height:20px; width:20px;" onClick="SelectForceColor(4)"></div>
+        <div class="col-md-2"><img src="images/blue.jpg" alt="blue" class="img-circle" style="height:20px; width:20px;" onClick="SelectForceColor(0)"></div>
+        <div class="col-md-2"><img src="images/purple.jpg" alt="purple" class="img-circle" style="height:20px; width:20px;" onClick="SelectForceColor(1)"></div>
+        <div class="col-md-2"><img src="images/red.jpg" alt="red" class="img-circle" style="height:20px; width:20px;" onClick="SelectForceColor(2)"></div>
+        <div class="col-md-2"><img src="images/orange.jpg" alt="orange" class="img-circle" style="height:20px; width:20px;" onClick="SelectForceColor(3)"></div>
+        <div class="col-md-1"></div>
+      </div>
+      <div id=sparkOutput style="visibility:hidden;"></div>
+      <button class="btn btn-danger" onclick="SelectForceColor()">Reset</button>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+  <script src="javascripts/force.js"></script>
+
+</html>
