@@ -1,0 +1,1 @@
+For more info on the project and how to set it up, go to the project page on [Hackster.io](https://www.hackster.io/anthony-ngu/the-force-tester-33f398)
